@@ -33,18 +33,18 @@ export const Route = createFileRoute("/")({
 });
 
 const bouquets = [
-  { img: vermelhas.url, name: "Rosas vermelhas com mosquitinho", note: "O clássico para declarar amor. Embrulho rosé e laço de cetim." },
-  { img: lilas.url, name: "Rosas e boca-de-leão lilás", note: "Tons de rosa e lavanda para aniversários e mães." },
-  { img: boxGirassol.url, name: "Box de girassol e crisântemos", note: "Alegria em caixa: girassol, alstroemérias e crisântemos." },
-  { img: lirios.url, name: "Lírios e alstroemérias", note: "Colorido, alegre, cheio de vida. Para parabenizar e agradecer." },
-  { img: rosasAzuis.url, name: "Rosas azuis com mosquitinho", note: "Para quem gosta de azul: o pedido mais diferente da semana." },
-  { img: brancas.url, name: "Rosas brancas e vermelhas", note: "Delicado e elegante, com boca-de-leão branca." },
-  { img: gerberas.url, name: "Gérberas e rosas champagne", note: "Rosa pink com champagne suave, em papel kraft de borboletas." },
-  { img: brancoLirios.url, name: "Lírios brancos e rosa", note: "Branco com toque de azul: puro, sereno, perfeito para pedir desculpas." },
-  { img: delfinium.url, name: "Rosas com delfínio roxo", note: "Vermelho e rosa com hastes roxas altas. Imponente e romântico." },
-  { img: liriosRosa.url, name: "Lírios rosa com astromélias", note: "Embrulho rosa fechado com barbante. Delicado da ponta ao laço." },
-  { img: bocaDeLeao.url, name: "Rosas e boca-de-leão branca", note: "Vermelho e branco no embrulho preto com jornal. Marcante." },
-  { img: borboleta.url, name: "Trio de rosas com borboleta", note: "Pequeno no tamanho, grande no gesto. Ótimo para surpresas." },
+  { img: vermelhas, name: "Rosas vermelhas com mosquitinho", note: "O clássico para declarar amor. Embrulho rosé e laço de cetim." },
+  { img: lilas, name: "Rosas e boca-de-leão lilás", note: "Tons de rosa e lavanda para aniversários e mães." },
+  { img: boxGirassol, name: "Box de girassol e crisântemos", note: "Alegria em caixa: girassol, alstroemérias e crisântemos." },
+  { img: lirios, name: "Lírios e alstroemérias", note: "Colorido, alegre, cheio de vida. Para parabenizar e agradecer." },
+  { img: rosasAzuis, name: "Rosas azuis com mosquitinho", note: "Para quem gosta de azul: o pedido mais diferente da semana." },
+  { img: brancas, name: "Rosas brancas e vermelhas", note: "Delicado e elegante, com boca-de-leão branca." },
+  { img: gerberas, name: "Gérberas e rosas champagne", note: "Rosa pink com champagne suave, em papel kraft de borboletas." },
+  { img: brancoLirios, name: "Lírios brancos e rosa", note: "Branco com toque de azul: puro, sereno, perfeito para pedir desculpas." },
+  { img: delfinium, name: "Rosas com delfínio roxo", note: "Vermelho e rosa com hastes roxas altas. Imponente e romântico." },
+  { img: liriosRosa, name: "Lírios rosa com astromélias", note: "Embrulho rosa fechado com barbante. Delicado da ponta ao laço." },
+  { img: bocaDeLeao, name: "Rosas e boca-de-leão branca", note: "Vermelho e branco no embrulho preto com jornal. Marcante." },
+  { img: borboleta, name: "Trio de rosas com borboleta", note: "Pequeno no tamanho, grande no gesto. Ótimo para surpresas." },
 ];
 
 const reviews = [
@@ -137,7 +137,7 @@ function Index() {
 
       <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <a href="/" className="flex items-center gap-3">
-          <img src={logo.url} alt="Amor em Flor" className="size-12 rounded-full object-cover" />
+          <img src={logo} alt="Amor em Flor" className="size-12 rounded-full object-cover" />
           <span className="font-display text-xl italic">Amor em Flor</span>
         </a>
         <nav className="hidden gap-8 text-sm md:flex">
@@ -169,8 +169,8 @@ function Index() {
           </a>
         </div>
         <div className="relative md:col-span-6">
-          <img src={vermelhas.url} alt="Buquê de rosas vermelhas com mosquitinho" className="aspect-[4/5] w-full rounded-sm object-cover md:ml-auto md:w-[85%]" />
-          <img src={borboleta.url} alt="Trio de rosas com borboleta" className="absolute -bottom-10 -left-2 hidden w-44 rounded-sm border-8 border-background object-cover md:block" />
+          <img src={vermelhas} alt="Buquê de rosas vermelhas com mosquitinho" className="aspect-[4/5] w-full rounded-sm object-cover md:ml-auto md:w-[85%]" />
+          <img src={borboleta} alt="Trio de rosas com borboleta" className="absolute -bottom-10 -left-2 hidden w-44 rounded-sm border-8 border-background object-cover md:block" />
         </div>
       </section>
 
@@ -236,7 +236,7 @@ function Index() {
           <div className="md:col-span-5">
             <h2 className="text-4xl leading-tight font-light md:text-5xl">Monte seu pedido em 20 segundos</h2>
             <p className="mt-5 max-w-sm text-muted-foreground">Escolha as opções e a mensagem chega pronta no nosso WhatsApp. Respondemos com sugestões e valores.</p>
-            <img src={lilas.url} alt="Buquê de rosas e boca-de-leão lilás" loading="lazy" className="mt-10 hidden aspect-square w-full rounded-sm object-cover md:block" />
+            <img src={lilas} alt="Buquê de rosas e boca-de-leão lilás" loading="lazy" className="mt-10 hidden aspect-square w-full rounded-sm object-cover md:block" />
           </div>
           <div className="md:col-span-7">
             <OrderBuilder />
@@ -262,7 +262,7 @@ function Index() {
       {/* store */}
       <section id="loja" className="py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2">
-          <img src={lirios.url} alt="Buquê de lírios laranja e alstroemérias" loading="lazy" className="aspect-square w-full rounded-sm object-cover" />
+          <img src={lirios} alt="Buquê de lírios laranja e alstroemérias" loading="lazy" className="aspect-square w-full rounded-sm object-cover" />
           <div>
             <h2 className="text-4xl leading-tight font-light md:text-5xl">Esqueceu a data? A gente está acordado.</h2>
             <p className="mt-5 text-lg text-muted-foreground">Funcionamos 24 horas. Compre na loja, retire na porta ou receba em casa.</p>
