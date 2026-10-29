@@ -204,7 +204,7 @@ function Index() {
             ["Você chama no WhatsApp", "Conta a ocasião, as cores e quanto quer investir."],
             ["A gente monta e manda foto", "Você aprova o buquê antes de sair da loja."],
             ["Entregamos ou você retira", "Entrega rápida em BC, ou retirada na porta da loja, 24h."],
-          ].map(([t, d], i) => (
+          ].map(([t, d]: string[], i) => (
             <div key={t} className="border-t border-primary/40 pt-5">
               <span className="font-display text-5xl font-light text-primary">{i + 1}</span>
               <h3 className="mt-3 text-2xl">{t}</h3>
@@ -265,7 +265,7 @@ function Index() {
 
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
         Amor em Flor · Floral design · Balneário Camboriú ·{" "}
-        <a href="https://instagram.com/amoremflorbc" target="_blank" rel="noopener noreferrer" className="underline">Instagram</a>
+        <a href="https://instagram.com/amoremflorof" target="_blank" rel="noopener noreferrer" className="underline">Instagram</a>
       </footer>
 
       {/* sticky mobile CTA */}
