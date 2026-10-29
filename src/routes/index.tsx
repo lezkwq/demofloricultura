@@ -200,10 +200,12 @@ function Index() {
                 </span>
               </a>
             ))}
-            <div className="flex flex-col justify-center rounded-sm bg-primary p-8 text-primary-foreground">
-              <p className="font-display text-3xl leading-tight italic">Tem uma ideia diferente?</p>
-              <p className="mt-3 opacity-85">Mande uma foto de referência, a cor favorita ou só o orçamento. A gente cria.</p>
-              <a href={wa("Olá! Tenho uma ideia de buquê personalizado, posso mandar uma referência?")} target="_blank" rel="noopener noreferrer" className="mt-6 self-start rounded-full bg-primary-foreground px-5 py-3 font-medium text-primary">
+            <div className="flex flex-col justify-center gap-4 rounded-sm bg-primary p-8 text-primary-foreground sm:col-span-2 lg:col-span-3 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:p-12">
+              <div>
+                <p className="font-display text-3xl leading-tight italic">Tem uma ideia diferente?</p>
+                <p className="mt-3 max-w-md opacity-85">Mande uma foto de referência, a cor favorita ou só o orçamento. A gente cria.</p>
+              </div>
+              <a href={wa("Olá! Tenho uma ideia de buquê personalizado, posso mandar uma referência?")} target="_blank" rel="noopener noreferrer" className="self-start rounded-full bg-primary-foreground px-6 py-3.5 font-medium text-primary lg:shrink-0">
                 Falar com a florista
               </a>
             </div>
