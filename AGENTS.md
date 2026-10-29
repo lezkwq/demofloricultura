@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Keep images as real binary files (PNG) in `src/assets/`, imported directly. Do NOT use lovable-assets `.asset.json` pointers — the user wants the actual image files visible in the GitHub repo.
