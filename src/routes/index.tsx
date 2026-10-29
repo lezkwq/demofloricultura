@@ -65,8 +65,8 @@ const occasions = ["Aniversário", "Namoro / amor", "Dia das Mães", "Pedido de 
 const colors = ["Vermelho", "Rosa", "Branco", "Colorido", "Azul", "Vocês escolhem"];
 
 function OrderBuilder() {
-  const [occasion, setOccasion] = useState(occasions[0]);
-  const [color, setColor] = useState(colors[0]);
+  const [occasion, setOccasion] = useState<string>("Aniversário");
+  const [color, setColor] = useState<string>("Vermelho");
   const [mode, setMode] = useState("Entrega");
   const [when, setWhen] = useState("Hoje");
   const msg = `Olá, Amor em Flor! Quero um buquê.\n• Ocasião: ${occasion}\n• Cores: ${color}\n• ${mode} — ${when}\nPodem me mandar opções e valores?`;
